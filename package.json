@@ -1,0 +1,24 @@
+{
+  "name": "server_alarm_clock",
+  "version": "1.0.0",
+  "description": "Server for alarm_clock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierreRamoin/ServerAlarmClock.git"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.6",
+    "body-parser": "^1.18.3"
+  },
+  "author": "Pierre RAMOIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PierreRamoin/ServerAlarmClock/issues"
+  },
+  "homepage": "https://github.com/PierreRamoin/ServerAlarmClock#readme"
+}

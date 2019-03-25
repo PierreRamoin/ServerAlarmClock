@@ -48,12 +48,12 @@ app.get('/temp', function (req, res) {
 
 app.post('/temp', function (req, res) {
     let body = req.body;
-    if (body === undefined || body.id === undefined || body.dateTime === undefined || body.temp === undefined) {
+    if (body === undefined || body.id === undefined || body.temp === undefined) {
         res.status(500).send('Not enough parameters');
         return;
     }
     db.run('INSERT INTO temperatures(id, date, temperature)' +
-        ' VALUES (?, ?, ?)', [body.id, body.dateTime, body.temp], (e) => {
+        ' VALUES (?, ?, ?)', [body.id, Date.now(), body.temp], (e) => {
         if (e !== null)
             res.status(500).send(e);
         else {
